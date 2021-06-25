@@ -59,21 +59,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-evenly'
     },
-    emptyBox: {
-        width: '100%',
-        height: 35,
-    },
-    errorBox: {
-        backgroundColor: 'grey',
-        paddingVertical: 5,
-        paddingHorizontal: 20,
-        marginTop: 20,
-    },
-    errorText: {
-        fontSize: 25,
-        color: 'white',
-        textAlign: 'center',
-    }
 })
 
 export default StartScreen;
