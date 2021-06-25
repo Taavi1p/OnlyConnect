@@ -9,11 +9,13 @@ const StartScreen = props => {
         props.navigation.navigate({routeName: 'Game'})
     }
     return (
+            <ImageBackground style = {styles.image} source={require('../assets/background.png')}>
                 <View style={styles.container}>
                     <View style={styles.buttons}>
                         <BeginButton onClick={startGame}>START</BeginButton>
                     </View>
                 </View>
+            </ImageBackground>
     )
 }
 
