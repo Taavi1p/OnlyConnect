@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, ImageBackground} from 'react-native';
+import Pack from '../packs/Pack.js';
+import data from '../data/info.js';
 
 
 const GameScreen = () => {
     return (
         <View style={{ flex: 1}}>
         <Text>Start screen</Text>
-        <View style={styles.containerBox}>
-            <View style={styles.Box}></View>
-            <View style={styles.Box}></View>
-        </View>
-        <View style={styles.containerBox}>
-            <View style={styles.Box}></View>
-            <View style={styles.Box}></View>
-        </View>
+        <Pack array={data}/>
         </View>
     )
 }
@@ -29,17 +24,6 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: 'white'
     },
-    containerBox: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-evenly'
-    },
-    Box: {
-        height: 150,
-        width: 150,
-        backgroundColor: 'grey',
-        margin: 10,
-    }
     
 })
 
